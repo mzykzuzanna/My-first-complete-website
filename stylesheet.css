@@ -1,1 +1,105 @@
 
+/* Color Palette */
+:root {
+    --bridgerton-blue: #a3c1ad;
+    --royal-gold: #d4af37;
+    --cream: #fffdf5;
+    --dark: #2c3e50;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cream);
+    color: var(--dark);
+    scroll-behavior: smooth;
+}
+
+/* Flexbox Utility */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Essential for making rows of cards */
+}
+
+/* Navigation */
+header {
+    background: white;
+    padding: 20px 5%;
+    border-bottom: 3px double var(--royal-gold);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar { justify-content: space-between; }
+.nav-links { list-style: none; gap: 30px; }
+.nav-links a { text-decoration: none; color: var(--dark); font-weight: 600; }
+
+/* Hero Section */
+.hero {
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://hips.hearstapps.com/hmg-prod/images/the-bridgerton-residence-1609364813.jpg?resize=980:*') center/cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content { max-width: 800px; }
+.hero-content h2 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin-bottom: 15px; }
+
+/* Cast Gallery */
+#cast { padding: 80px 5%; }
+.section-title { font-family: 'Playfair Display', serif; text-align: center; margin-bottom: 50px; font-size: 2.5rem; }
+
+.cast-grid { gap: 30px; }
+
+.cast-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 260px;
+    text-align: center;
+    transition: all 0.4s ease; /* Controls the hover speed */
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+/* INTERACTIVE HOVER - MAKES CARDS BIGGER */
+.cast-card:hover {
+    transform: scale(1.07); 
+    border: 1px solid var(--royal-gold);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.cast-card h3 { margin-top: 10px; font-family: 'Playfair Display', serif; }
+.cast-card p { font-size: 0.85rem; color: #777; font-style: italic; }
+
+.card-img {
+    height: 300px;
+    background-color: #eee;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Character Images - REPLACE THESE URLS WITH YOUR FAVORITE FINDINGS */
+.anthony { background-image: url('https://static.wikia.nocookie.net/bridgerton/images/8/81/Anthony_2x07-4.png/revision/latest?cb=20220428082749'); }
+.benedict { background-image: url('https://static.wikia.nocookie.net/bridgerton/images/5/5f/Benedict-S3E2.jpg/revision/latest?cb=20240526123537'); }
+.colin { background-image: url('https://static.wikia.nocookie.net/bridgerton/images/9/9b/Colin_Bridgerton.jpg/revision/latest?cb=20230917003320'); }
+.daphne { background-image: url('https://hips.hearstapps.com/hmg-prod/images/bridgerton-106-unit-00595r-jpg-bridgerton-106-unit-00595r-664c73c1eb770.jpg?crop=0.542xw:0.724xh;0.0977xw,0.0543xh&resize=1200:*'); }
+.eloise { background-image: url('https://www.refinery29.com/images/10228437.jpg'); }
+.francesca { background-image: url('https://static.wikia.nocookie.net/bridgerton/images/d/df/FrancescaBridgertonS3.jpeg/revision/latest?cb=20240516143951'); }
+.gregory { background-image: url('https://static.wikia.nocookie.net/bridgerton/images/b/b3/Gregory-S3E1.jpg/revision/latest?cb=20240526123658'); }
+.hyacinth { background-image: url('https://variety.com/wp-content/uploads/2026/01/Bridgerton-Season4-Hyacinth-armscrossed.jpg'); }
+
+.penelope { background-image: url('https://static.wikia.nocookie.net/bridgerton/images/3/38/Penelope_Bridgerton.jpg/revision/latest?cb=20260214005348'); }
+.simon { background-image: url('https://juliaquinn.com/WP/wp-content/uploads/2022/03/WAX_simon2.jpg'); }
+.charlotte { background-image: url('https://people.com/thmb/6sAI-NCoJHe14JxIsuhxQZ_Z_1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/BRIDGERTON_206_Unit_01593R-f1b266611dc7488bb7aef27ce20dcf6e.jpg'); }
+.lady-d { background-image: url('https://juliaquinn.com/WP/wp-content/uploads/2022/03/LadyDanbury.png'); }
+
+footer { background: var(--dark); color: white; text-align: center; padding: 40px; margin-top: 50px; }
