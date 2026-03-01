@@ -1,3 +1,4 @@
+
 html {
     scroll-behavior: smooth;
 }
@@ -9,13 +10,17 @@ html {
     --dark: #2c3e50;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Clean body text */
     background-color: var(--cream);
     color: var(--dark);
-    scroll-behavior: smooth;
+    line-height: 1.6;
 }
 
 
@@ -23,9 +28,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Essential for making rows of cards */
+    flex-wrap: wrap;
 }
-
 
 header {
     background: white;
@@ -37,27 +41,64 @@ header {
 }
 
 .navbar { justify-content: space-between; }
-.nav-links { list-style: none; gap: 30px; }
-.nav-links a { text-decoration: none; color: var(--dark); font-weight: 600; }
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-links { list-style: none; display: flex; gap: 30px; }
+
+.nav-links a { 
+    text-decoration: none; 
+    color: var(--dark); 
+    font-weight: 600; 
+    transition: 0.3s;
+}
+
+.nav-links a:hover { color: var(--bridgerton-blue); }
 
 
 .hero {
-    height: 70vh;
+    height: 75vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
                 url('https://hips.hearstapps.com/hmg-prod/images/the-bridgerton-residence-1609364813.jpg?resize=980:*') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     text-align: center;
     padding: 20px;
 }
 
 .hero-content { max-width: 800px; }
-.hero-content h2 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin-bottom: 15px; }
+
+.hero-content h2 { 
+    font-family: 'Playfair Display', serif; 
+    font-size: 4rem; 
+    font-style: italic;
+    margin-bottom: 15px; 
+}
+
+.hero-content p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.3rem;
+}
 
 
 #cast { padding: 80px 5%; }
-.section-title { font-family: 'Playfair Display', serif; text-align: center; margin-bottom: 50px; font-size: 2.5rem; }
 
-.cast-grid { gap: 30px; }
+.section-title { 
+    font-family: 'Playfair Display', serif; 
+    text-align: center; 
+    margin-bottom: 50px; 
+    font-size: 2.5rem; 
+}
+
+.cast-grid { display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; }
 
 .cast-card {
     background: white;
@@ -66,9 +107,15 @@ header {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     width: 260px;
     text-align: center;
-    transition: all 0.4s ease; /* Controls the hover speed */
+    transition: all 0.4s ease;
     cursor: pointer;
     border: 1px solid transparent;
+}
+
+.cast-card h3 { 
+    margin-top: 15px; 
+    font-family: 'Playfair Display', serif; 
+    font-size: 1.4rem;
 }
 
 
@@ -78,36 +125,31 @@ header {
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-.cast-card h3 { margin-top: 10px; font-family: 'Playfair Display', serif; }
-.cast-card p { font-size: 0.85rem; color: #777; font-style: italic; }
-
 .card-img {
     height: 300px;
-    background-color: #eee;
     border-radius: 8px;
     background-size: cover;
-    background-position: center;
-}
-
-.card-img {
+    background-position: center top;
     position: relative;
     overflow: hidden;
 }
 
 .overlay {
     position: absolute;
-    bottom: -100%; /* Hidden by default */
+    bottom: -100%; 
     left: 0;
     width: 100%;
-    background: rgba(163, 193, 173, 0.9); /* Bridgerton Blue with transparency */
+    background: rgba(163, 193, 173, 0.95); /* Bridgerton Blue */
     color: white;
-    padding: 10px;
+    padding: 15px;
     transition: bottom 0.4s ease;
-    font-size: 0.9rem;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1rem;
 }
 
 .cast-card:hover .overlay {
-    bottom: 0; /* Slides up on hover */
+    bottom: 0; 
 }
 
 
@@ -124,4 +166,13 @@ header {
 .charlotte { background-image: url('./queen.jpg'); }
 .lady-d { background-image: url('./lady.jpg'); }
 
-footer { background: var(--dark); color: white; text-align: center; padding: 40px; margin-top: 50px; }
+
+footer { 
+    background: var(--dark); 
+    color: white; 
+    text-align: center; 
+    padding: 40px; 
+    margin-top: 50px; 
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
