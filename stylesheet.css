@@ -88,19 +88,17 @@ header {
 }
 
 
-.anthony { background-image: url('https://m.media-amazon.com/images/M/MV5BZmE2ZWRhYjAtYTFhMi00ZGI3LWE0YzctYTM0ZGU0ZDU0YjA3XkEyXkFqcGc@._V1_.jpg'); }
-.benedict { background-image: url('https://m.media-amazon.com/images/M/MV5BMGUyYmE1NzUtY2U5ZC00YTRkLWFlYTctYThjN2NlZGRmYmYxXkEyXkFqcGc@._V1_.jpg'); }
-.colin { background-image: url('https://m.media-amazon.com/images/M/MV5BOGU4YTk3NzUtZWY0ZS00ZWFjLTllYzYtMDdhOTYxYzdkY2ZkXkEyXkFqcGc@._V1_.jpg'); }
-.daphne { background-image: url('https://m.media-amazon.com/images/M/MV5BNDllYjlkYjQtZjk3Ny00YjVjLWEyY2QtYjY3ZTFkZGU3NzFhXkEyXkFqcGc@._V1_.jpg'); }
-.francesca { background-image: url('https://m.media-amazon.com/images/M/MV5BMjY5NzU0N2YtZDg1Yi00MjRkLTlmOWEtNmQ3MGRjYTkyMDI4XkEyXkFqcGc@._V1_.jpg'); }
-.gregory { background-image: url('https://m.media-amazon.com/images/M/MV5BMWE3YmE5YTgtNDU1ZC00ODhmLThlZTEtN2U3MDk1Y2Y3MWY0XkEyXkFqcGc@._V1_.jpg'); }
-.hyacinth { background-image: url('https://m.media-amazon.com/images/M/MV5BMzkzMTg3MzMtZDRmOC00ZTZmLWE1Y2YtZjUxNjk5YzE0MjVmXkEyXkFqcGc@._V1_.jpg'); }
-.penelope { background-image: url('https://m.media-amazon.com/images/M/MV5BMDNhMDJiN2EtNDY3MS00OTY1LWI1MDUtYjY2NmFjNTkyYmY4XkEyXkFqcGc@._V1_.jpg'); }
-
-
-.eloise { background-image: url('https://www.refinery29.com/images/10228437.jpg'); }
-.simon { background-image: url('https://juliaquinn.com/WP/wp-content/uploads/2022/03/WAX_simon2.jpg'); }
-.charlotte { background-image: url('https://people.com/thmb/6sAI-NCoJHe14JxIsuhxQZ_Z_1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/BRIDGERTON_206_Unit_01593R-f1b266611dc7488bb7aef27ce20dcf6e.jpg'); }
-.lady-d { background-image: url('https://juliaquinn.com/WP/wp-content/uploads/2022/03/LadyDanbury.png'); }
+.anthony { background-image: url('./anthony.jpg'); }
+.benedict { background-image: url('./benedict.jpg'); }
+.colin { background-image: url('./colin.jpg'); }
+.daphne { background-image: url('./daphne.jpg'); }
+.eloise { background-image: url('./eloise.jpg'); }
+.francesca { background-image: url('./francesca.jpg'); }
+.gregory { background-image: url('./gregory.jpg'); }
+.hyacinth { background-image: url('./hyacinth.jpg'); }
+.penelope { background-image: url('./penelope.jpg'); }
+.simon { background-image: url('./simon.jpg'); }
+.charlotte { background-image: url('./queen.jpg'); }
+.lady-d { background-image: url('./lady.jpg'); }
 
 footer { background: var(--dark); color: white; text-align: center; padding: 40px; margin-top: 50px; }
