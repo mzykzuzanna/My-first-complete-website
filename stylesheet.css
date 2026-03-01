@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+}
 
 :root {
     --bridgerton-blue: #a3c1ad;
@@ -29,9 +31,9 @@ header {
     background: white;
     padding: 20px 5%;
     border-bottom: 3px double var(--royal-gold);
-    position: sticky;
+    position: sticky; 
     top: 0;
-    z-index: 100;
+    z-index: 1000; 
 }
 
 .navbar { justify-content: space-between; }
