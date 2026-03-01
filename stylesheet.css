@@ -89,6 +89,27 @@ header {
     background-position: center;
 }
 
+.card-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    bottom: -100%; /* Hidden by default */
+    left: 0;
+    width: 100%;
+    background: rgba(163, 193, 173, 0.9); /* Bridgerton Blue with transparency */
+    color: white;
+    padding: 10px;
+    transition: bottom 0.4s ease;
+    font-size: 0.9rem;
+}
+
+.cast-card:hover .overlay {
+    bottom: 0; /* Slides up on hover */
+}
+
 
 .anthony { background-image: url('./anthony.jpg'); }
 .benedict { background-image: url('./benedict.jpg'); }
